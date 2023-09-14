@@ -53,7 +53,7 @@ public class Equipo {
 
 	public void buscarEntrenador() {
 		if (entrenador != null) {
-			System.out.println("Entrenador encontrado: " + entrenador.getEspecialidad());
+			System.out.println("Entrenador encontrado, especialidad: " + entrenador.getEspecialidad());
 		} else {
 			System.out.println("No hay entrenador registrado en este equipo.");
 		}

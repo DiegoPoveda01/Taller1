@@ -45,6 +45,7 @@ public class Main {
         equipoMostrar.historialEquipo();
         Deportista deportista3 = new Deportista("Lionel", "Messi", "messi@gmail.com", "12345678", null, "Delantero", null);
         equipoMostrar.registrarDeportista(deportista3);
+        equipo1.registrarDeportista(deportista3);
     }
 }
 
