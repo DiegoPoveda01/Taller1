@@ -11,7 +11,7 @@ public class GestionClub {
 	}
 
 	public void buscarEquipo() {
-		throw new UnsupportedOperationException();
+
 	}
 
 	public void crearEquipo() {

@@ -62,10 +62,34 @@ public class Equipo {
 
 
 	public void historialEquipo() {
-		throw new UnsupportedOperationException();
+		System.out.println("Historial de Partidos del Equipo " + nombre + ":");
+
+		if (historial.isEmpty()) {
+			System.out.println("No hay partidos registrados.");
+		} else {
+			for (PartidoJugado partido : historial) {
+				System.out.println("Fecha: " + partido.getFecha());
+				System.out.println("Lugar: " + partido.getLugar());
+				System.out.println("Equipo Oponente: " + partido.getEquipoOponente());
+				System.out.println("Resultado: " + partido.getResultado());
+				System.out.println();
+			}
+		}
 	}
 
+
 	public void mostrarEstadisticas() {
-		throw new UnsupportedOperationException();
+		System.out.println("Estadísticas del Equipo " + nombre + ":");
+		System.out.println("Número de Deportistas: " + deportistas.size());
+		System.out.println("Número de Deportes: " + deportes.size());
+
+		if (entrenador != null) {
+			System.out.println("Entrenador: " + entrenador.getEspecialidad());
+		} else {
+			System.out.println("Entrenador: No hay entrenador asignado");
+		}
+
+		System.out.println("Partidos Jugados: " + historial.size());
 	}
+
 }
