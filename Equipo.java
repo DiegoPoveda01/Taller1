@@ -22,13 +22,26 @@ public class Equipo {
 		this.nombre = nombre;
 	}
 
-	public void buscarDeportista() {
-		throw new UnsupportedOperationException();
+	public Deportista buscarDeportista(String email) {
+		for (Deportista deportista : deportistas) {
+			if (deportista.getEmail().equals(email)) {
+				return deportista;
+			}
+		}
+		return null;
 	}
 
-	public void registrarDeportista() {
-		throw new UnsupportedOperationException();
+
+	public void registrarDeportista(Deportista nuevoDeportista) {
+		Deportista existenteDeportista = buscarDeportista(nuevoDeportista.getEmail());
+		if (existenteDeportista == null) {
+			deportistas.add(nuevoDeportista);
+			System.out.println("Deportista registrado con éxito.");
+		} else {
+			System.out.println("Error: Ya existe un deportista con el mismo email.");
+		}
 	}
+
 
 	public void buscarEntrenador() {
 		throw new UnsupportedOperationException();
