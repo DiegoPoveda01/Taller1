@@ -25,6 +25,6 @@ public class Baloncesto extends Deporte {
 	}
 
 	public String getTipo() {
-		throw new UnsupportedOperationException();
+		return "Baloncesto";
 	}
 }
