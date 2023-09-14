@@ -1,0 +1,10 @@
+Para la realización de la gestión del club deportivo se utilizarán las siguientes clases:
+-Deportista: Simbolizarán a los jugadores de los equipos.
+-Entrenador: Simbolizará a los entrandores de los equipos.
+-PartidoJugado: Se utilizará para manejar el historial de los equipos, registrando partidos ya jugados.
+-Equipo: Servirá para manejar los jugadores, entrenadores y estadísticas del equipo.
+-GestionClub: Servirá para la creación de equipos, busqueda, asignación de jugadores y entrenadores.
+-Deporte: Clase padre de los deportes que utilizará el programa.
+-Baloncesto: Clase dedicada al deporte baloncesto para el equipo.
+-Tenis: Clase dedicada al deporte tenis para el equipo.
+-Futbol: Clase dedicada al deporte fútbol para el equipo.

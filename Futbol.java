@@ -25,6 +25,6 @@ public class Futbol extends Deporte {
 	}
 
 	public String getTipo() {
-		throw new UnsupportedOperationException();
+		return "Fútbol";
 	}
 }

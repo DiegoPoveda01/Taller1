@@ -21,6 +21,14 @@ public class Equipo {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+	public ArrayList<Deporte> getDeportes(){return this.deportes;}
+	public void setDeportes(ArrayList<Deporte> deportes){this.deportes = deportes;}
+	public ArrayList<Deportista> getDeportistas(){return this.deportistas;}
+	public void setDeportistas(ArrayList<Deportista> deportistas){this.deportistas = deportistas;}
+	public Entrenador getEntrenador(){return this.entrenador;}
+	public void setEntrenador(Entrenador entrenador){this.entrenador = entrenador;}
+	public ArrayList<PartidoJugado> getHistorial(){return this.historial;}
+	public void setHistorial(ArrayList<PartidoJugado> historial){this.historial = historial;}
 
 	public Deportista buscarDeportista(String email) {
 		for (Deportista deportista : deportistas) {
