@@ -92,7 +92,7 @@ public class Equipo {
 		System.out.println("Número de Deportes: " + deportes.size());
 
 		if (entrenador != null) {
-			System.out.println("Entrenador: " + entrenador.getEspecialidad());
+			System.out.println("Especialidad Entrenador: " + entrenador.getEspecialidad());
 		} else {
 			System.out.println("Entrenador: No hay entrenador asignado");
 		}

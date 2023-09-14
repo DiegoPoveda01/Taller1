@@ -33,7 +33,6 @@ public class GestionClub {
 
     public void asignarJugadores(String nombreEquipo, ArrayList<Deportista> jugadores) {
         Equipo equipo = buscarEquipo(nombreEquipo);
-
         if (equipo != null) {
             equipo.getDeportistas().addAll(jugadores);
             System.out.println("Jugadores asignados al equipo " + nombreEquipo + " con éxito.");
