@@ -44,12 +44,22 @@ public class Equipo {
 
 
 	public void buscarEntrenador() {
-		throw new UnsupportedOperationException();
+		if (entrenador != null) {
+			System.out.println("Entrenador encontrado: " + entrenador.getEspecialidad());
+		} else {
+			System.out.println("No hay entrenador registrado en este equipo.");
+		}
 	}
 
-	public void registrarEntrenador() {
-		throw new UnsupportedOperationException();
+	public void registrarEntrenador(Entrenador nuevoEntrenador) {
+		if (entrenador == null) {
+			entrenador = nuevoEntrenador;
+			System.out.println("Entrenador registrado con éxito.");
+		} else {
+			System.out.println("Ya hay un entrenador registrado en este equipo.");
+		}
 	}
+
 
 	public void historialEquipo() {
 		throw new UnsupportedOperationException();
